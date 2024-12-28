@@ -1,0 +1,11 @@
+,ID,year,loan_limit,Gender,approv_in_adv,loan_type,loan_purpose,Credit_Worthiness,open_credit,business_or_commercial,loan_amount,rate_of_interest,Interest_rate_spread,Upfront_charges,term,Neg_ammortization,interest_only,lump_sum_payment,property_value,construction_type,occupancy_type,Secured_by,total_units,income,credit_type,Credit_Score,co-applicant_credit_type,age,submission_of_application,LTV,Region,Security_Type,Status,dtir1
+9336,34226,2019,cf,Joint,nopre,type1,p1,l1,nopc,nob/c,546500,,,,360.0,not_neg,int_only,not_lpsm,,sb,pr,home,1U,9300.0,EQUI,565,EXP,35-44,not_inst,,North,direct,1,
+38713,63603,2019,cf,Male,nopre,type1,p4,l1,nopc,nob/c,306500,,,,360.0,not_neg,not_int,not_lpsm,358000.0,sb,pr,home,1U,5580.0,CRIF,543,CIB,25-34,to_inst,85.61452514,North,direct,1,45.0
+62947,87837,2019,cf,Female,nopre,type1,p1,l1,nopc,nob/c,206500,,,,300.0,neg_amm,not_int,not_lpsm,,sb,pr,home,1U,3840.0,EQUI,618,EXP,45-54,not_inst,,south,direct,1,
+50085,74975,2019,ncf,Joint,pre,type2,p4,l1,nopc,b/c,326500,,,,360.0,not_neg,not_int,not_lpsm,,sb,pr,home,1U,4920.0,EQUI,619,EXP,35-44,to_inst,,central,direct,1,
+86367,111257,2019,cf,Male,nopre,type2,p3,l1,nopc,b/c,196500,,,,360.0,neg_amm,not_int,not_lpsm,228000.0,sb,pr,home,1U,1860.0,CIB,880,CIB,65-74,to_inst,86.18421053,North,direct,1,51.0
+108939,133829,2019,cf,Sex Not Available,nopre,type1,p3,l1,nopc,nob/c,116500,,,,360.0,neg_amm,not_int,not_lpsm,,sb,pr,home,1U,2340.0,EQUI,567,EXP,55-64,to_inst,,south,direct,1,
+68120,93010,2019,cf,Male,nopre,type1,p4,l1,nopc,nob/c,426500,,,,360.0,not_neg,not_int,not_lpsm,468000.0,sb,pr,home,1U,5160.0,CIB,765,CIB,45-54,to_inst,91.13247863,North,direct,1,40.0
+123615,148505,2019,cf,Sex Not Available,nopre,type1,p3,l1,nopc,nob/c,176500,,,,360.0,not_neg,not_int,not_lpsm,238000.0,sb,pr,home,1U,4140.0,CIB,611,CIB,45-54,to_inst,74.15966387,south,direct,1,47.0
+8465,33355,2019,,Male,nopre,type1,p4,l1,nopc,nob/c,516500,,,,360.0,neg_amm,not_int,not_lpsm,688000.0,sb,pr,home,1U,7620.0,CRIF,629,CIB,45-54,to_inst,75.07267442,south,direct,1,30.0
+106104,130994,2019,cf,Joint,nopre,type3,p4,l1,nopc,nob/c,546500,,,,360.0,not_neg,not_int,not_lpsm,538000.0,sb,pr,home,1U,,CIB,714,EXP,55-64,not_inst,101.5799257,North,direct,1,

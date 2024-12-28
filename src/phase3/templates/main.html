@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Driven Loan Default Prediction and Financial Analysis</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <h1>Data-Driven Loan Default Prediction and Financial Analysis</h1>
+</head>
+<body>
+    <div class="main_container">
+        <div id="overview">
+            <p>
+                Please select the information below to get prediction. You may select positive/negative samples for testing purpose.
+            </p>
+            <select id="sampleType" onchange="updateFormWithData()">
+                <option value="neg">Negative Samples</option>
+                <option value="pos">Positive Samples</option>
+            </select>
+        </div>
+        
+        <div class="main_form"> 
+            <div class="first_col_form">
+                <div class="form">
+                    <label>Credit Type:</label>
+                    <select id="credittype">
+                        <option disabled selected value="CRIF">Select Credit Type</option>
+                        <option>CRIF</option>
+                        <option>EXP</option>
+                        <option>EQUI</option>
+                        <option>CIB</option>
+                    </select>
+                </div>            
+                <div class="form">
+                    <label>Rate of Interest:</label>
+                    <input type="range" min="0" max="8" value="" step="0.0001" class="slider" id="rate_of_interest">
+                    <p>Value: <span id="rate_of_interest_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Loan Limit:</label>
+                    <select id="loanlimit">
+                        <option disabled selected value="">Select Loan Limit</option>
+                        <option>cf</option>
+                        <option>ncf</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Gender:</label>
+                    <select id="gender">
+                        <option disabled selected value="Sex Not Available">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Joint</option>
+                        <option>Sex Not Available</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Approved in advance:</label>
+                    <select id="approv_in_adv">
+                        <option disabled selected value="">Select Approved in advance</option>
+                        <option>pre</option>
+                        <option>nopre</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Loan Type:</label>
+                    <select id="loantype">
+                        <option disabled selected value="">Select Loan Type</option>
+                        <option>type1</option>
+                        <option>type2</option>
+                        <option>type3</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Loan Purpose:</label>
+                    <select id="loanpurpose">
+                        <option disabled selected value="">Select Loan Purpose</option>
+                        <option>p1</option>
+                        <option>p2</option>
+                        <option>p3</option>
+                        <option>p4</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Credit Worthiness:</label>
+                    <select id="creditworthiness">
+                        <option disabled selected value="">Select Credit Worthiness</option>
+                        <option>l1</option>
+                        <option>l2</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Open Credit:</label>
+                    <select id="opencredit">
+                        <option disabled selected value="">Select Open Credit</option>
+                        <option>nopc</option>
+                        <option>opc</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Business or Commercial:</label>
+                    <select id="bussiniessorcommercial">
+                        <option disabled selected value="">Select Business or Commercial</option>
+                        <option>nob/c</option>
+                        <option>b/c</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Loan Amount:</label>
+                    <input type="range" min="16500" max="3576500" value="" step="0.01" class="slider" id="loan_amount">
+                    <p>Value: <span id="loan_amount_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Interest Rate Spread:</label>
+                    <input type="range" min="-3" max="3" value="" step="0.0001" class="slider" id="Interest_rate_spread">
+                    <p>Value: <span id="Interest_rate_spread_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Upfront Charges:</label>
+                    <input type="range" min="0" max="60000" value="" class="slider" id="Upfront_charges">
+                    <p>Value: <span id="Upfront_charges_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Term:</label>
+                    <input type="range" min="96" max="360" value="" class="slider" id="term">
+                    <p>Value: <span id="term_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Negative Amortization:</label>
+                    <select id="neg_amortization">
+                        <option disabled selected value="">Select Negative Amortization</option>
+                        <option>not_neg</option>
+                        <option>neg_amm</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Interest Only:</label>
+                    <select id="interestonly">
+                        <option disabled selected value="">Select Interest Only</option>
+                        <option>not_int</option>
+                        <option>int_only</option>
+                    </select>
+                </div>
+            </div>
+            <div class="second_col_form">
+                <div class="form">
+                    <label>Property Value:</label>
+                    <input type="range" min="8000" max="16508000" value="" class="slider" id="property_value">
+                    <p>Value: <span id="property_value_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Construction Type:</label>
+                    <select id="construction_type">
+                        <option disabled selected value="">Select Construction Type</option>
+                        <option>sb</option>
+                        <option>mh</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Occupancy Type:</label>
+                    <select id="occupancy_type">
+                        <option disabled selected value="">Select Occupancy Type</option>
+                        <option>pr</option>
+                        <option>ir</option>
+                        <option>sr</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Secured By:</label>
+                    <select id="secured_by">
+                        <option disabled selected value="">Select Secured By</option>
+                        <option>home</option>
+                        <option>land</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Total Units:</label>
+                    <select id="total_units">
+                        <option disabled selected value="">Select Secured By</option>
+                        <option>1U</option>
+                        <option>2U</option>
+                        <option>3U</option>
+                        <option>4U</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Income:</label>
+                    <input type="range" min="0" max="578580" value="" class="slider" id="income">
+                    <p>Value: <span id="income_value"></span></p>
+                </div>
+                
+                <div class="form">
+                    <label>Credit Score:</label>
+                    <input type="range" min="500" max="900" value="" class="slider" id="credit_score">
+                    <p>Value: <span id="credit_score_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>co-applicant Credit Type:</label>
+                    <select id="coappl_credittype">
+                        <option disabled selected value="">Select co-applicant Credit Type</option>
+                        <option>EXP</option>
+                        <option>CIB</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Age:</label>
+                    <select id="age">
+                        <option disabled selected value="">Select Age</option>
+                        <option>&lt;25</option>
+                        <option>25-34</option>
+                        <option>35-44</option>
+                        <option>45-54</option>
+                        <option>55-64</option>
+                        <option>65-74</option>
+                        <option>>74</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Submission of Application:</label>
+                    <select id="submission_of_application">
+                        <option disabled selected value="">Select Submission of Application</option>
+                        <option>to_inst</option>
+                        <option>not_inst</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>LTV:</label>
+                    <input type="range" min="1" max="7831" step="0.0001" value="" class="slider" id="ltv">
+                    <p>Value: <span id="ltv_value"></span></p>
+                </div>
+                <div class="form">
+                    <label>Region:</label>
+                    <select id="region">
+                        <option disabled selected value="">Select Region</option>
+                        <option>north</option>
+                        <option>south</option>
+                        <option>central</option>
+                        <option>north_east</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Security Type:</label>
+                    <select id="security_type">
+                        <option disabled selected value="">Select Security Type</option>
+                        <option>direct</option>
+                        <option>indriect</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Loan Status:</label>
+                    <select id="status">
+                        <option disabled selected value="">Select Loan Status</option>
+                        <option>1(loan granted)</option>
+                        <option>0(not granted)</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label>Debt to Income Ratio:</label>
+                    <input type="range" min="5" max="61" value="" class="slider" id="dtir1">
+                    <p>Value: <span id="dtir1_value"></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="sibmitbtn_div">
+            <button id="submitBTN" onclick="submit()">Submit</button>
+        </div>
+        <div id="predcted_div">
+            <span id="predicted"></span>
+        </div>
+        <div id="plotviewbtn_div"></div>
+        <div id="plot_container">
+            <img id="plot">
+        </div>
+    </div>    
+
+    <script src="../static/script.js"></script>
+    <script>
+
+        function initializeSliders() {
+            // Select all sliders
+            const sliders = document.querySelectorAll('.slider');
+            sliders.forEach(slider => {
+                const displaySpan = document.getElementById(slider.id + '_value');
+                
+                // Set initial display value
+                displaySpan.textContent = '';
+                
+                // Add event listener to update display when slider is moved
+                slider.addEventListener('input', function() {
+                    displaySpan.textContent = this.value;
+                });
+            });
+        }
+
+        // Call the function to initialize sliders
+        initializeSliders();
+        
+        let negData = {{ neg_data | tojson }};
+        let posData = {{ pos_data | tojson }};
+        function updateFormWithData() {
+            const sampleType = document.getElementById('sampleType').value;
+            const choiceData = (sampleType === 'neg' ? negData : posData);
+            const randomKey = Object.keys(choiceData)[Math.floor(Math.random() * Object.keys(choiceData).length)];
+            const data = choiceData[randomKey];
+            console.log("chosen sample");
+            console.log(data);
+            document.getElementById('loanlimit').value = data['loan_limit'] || '';
+            document.getElementById('approv_in_adv').value = data['approv_in_adv'] || '';
+            document.getElementById('loantype').value = data['loan_type'] || '';
+            document.getElementById('loanpurpose').value = data['loan_purpose'] || '';
+            document.getElementById('creditworthiness').value = data['Credit_Worthiness'] || '';
+            document.getElementById('opencredit').value = data['open_credit'] || '';
+            document.getElementById('bussiniessorcommercial').value = data['business_or_commercial'] || '';
+            document.getElementById('neg_amortization').value = data['Neg_ammortization'] || '';
+            document.getElementById('interestonly').value = data['interest_only'] || '';
+            document.getElementById('construction_type').value = data['construction_type'] || '';
+            document.getElementById('occupancy_type').value = data['occupancy_type'] || '';
+            document.getElementById('secured_by').value = data['Secured_by'] || '';
+            document.getElementById('total_units').value = data['total_units'] || '';
+            document.getElementById('credittype').value = data['credit_type'] || '';
+            document.getElementById('coappl_credittype').value = data['co-applicant_credit_type'] || '';
+            document.getElementById('age').value = data['age'] || ''; // Handle special characters or spaces properly
+            document.getElementById('submission_of_application').value = data['submission_of_application'] || '';
+            document.getElementById('security_type').value = data['Security_Type'] || '';
+
+            // Update dropdowns 
+            document.getElementById('gender').value = data['Gender'] || '';
+            document.getElementById('region').value = (data['Region'] || '').toLowerCase();
+            document.getElementById('status').value = data['Status'] === 1 ? "1(loan granted)" : "0(not granted)";
+
+            // Update range inputs and their respective display spans
+            updateSlider('loan_amount', data['loan_amount']);
+            updateSlider('rate_of_interest', data['rate_of_interest']);
+            updateSlider('Interest_rate_spread', data['Interest_rate_spread']);
+            updateSlider('Upfront_charges', data['Upfront_charges']);
+            updateSlider('term', data['term']);
+            updateSlider('property_value', data['property_value']);
+            updateSlider('income', data['income']);
+            updateSlider('credit_score', data['Credit_Score']);
+            updateSlider('ltv', data['LTV']);
+            updateSlider('dtir1', data['dtir1']);
+        }
+
+        function updateSlider(id, value) {
+            const slider = document.getElementById(id);
+            const displaySpan = document.getElementById(id + '_value');
+            slider.value = value || ''; // Ensure slider doesn't break if value is undefined
+            displaySpan.innerText = value || ''; // Display "N/A" if value is undefined
+        }
+
+        window.onload = function() {
+            updateFormWithData(); // Populate form on page load with default selection
+        }
+        // dropdown.addEventListener('change', updateFormWithData);
+    </script>        
+        
+</body>
+</html>
+
+

@@ -1,0 +1,56 @@
+Features 
+Description :
+
+
+ID : Unique identifier for each loan record. 
+year : Year of loan issuance. 
+loan_limit : Loan limit category. 
+--------------------------------
+Unique values: 'cf', nan, 'ncf
+
+
+Gender : Loan applicant gender. 
+approv_in_adv : Indicates whether the loan has been pre-approved. 
+loan_type : Type of loan. 
+loan_purpose : Purpose of the loan. 
+Credit_Worthiness : The extent to which a person or company is considered suitable for receiving financial credit is often based on its reliability in repaying money in the past. 
+open_credit : Indicates whether the applicant has other open credits. 
+business_or_commercial : Whether the loan is for business or commercial. 
+loan_amount : Total loan amount. 
+rate_of_interest : Loan interest rate. 
+Interest_rate_spread : Interest rate differential relative to a benchmark index. 
+Upfront_charges : Initial charges for the loan. 
+term : Loan duration in months. 
+Neg_ammortization : Indicates whether there is negative amortization. 
+interest_only : Whether the loan allows for interest-only payments. 
+lump_sum_payment : Indicates whether there is an option to pay in a single installment. 
+property_value : Value of the property associated with the loan. 
+construction_type : Type of construction of the property. 
+occupancy_type : Type of property occupancy. 
+Secured_by : Type of loan guarantee. 
+
+total_units : Number of units related to the loan. 
+----------------------------
+The total number of units associated with the loan refers to the quantity of individual properties 
+or housing units included in the loan. These units may consist of apartments, condominiums, 
+townhouses, or single-family homes. The total number of units is a critical factor in determining 
+both the overall loan amount and eligibility.
+
+income : Loan applicant's income. 
+
+credit_type : Type of credit check used. 
+-----------------------------------------
+The names of credit bureaus. They collect and maintains credit information on individuals
+ and businesses.
+Unique values in the dataset: 'EXP', 'EQUI', 'CRIF', 'CIB  
+
+
+Credit_Score : Applicant's credit score. co-
+applicant_credit_type : Type of credit check for co-applicants. 
+age : Age range of the applicant. 
+submission_of_application : Loan application submission method. 
+LTV (Loan to Value): Ratio of loan amount to property value. 
+Region : Geographic region of the loan. 
+Security_Type : Type of loan security. 
+Status : Loan Status (1 loan granted, 0 not granted) 
+dtir1 (Debt to Income Ratio): Debt/income ratio of the applicant.

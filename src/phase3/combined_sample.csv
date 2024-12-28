@@ -1,0 +1,21 @@
+ID,year,loan_limit,Gender,approv_in_adv,loan_type,loan_purpose,Credit_Worthiness,open_credit,business_or_commercial,loan_amount,rate_of_interest,Interest_rate_spread,Upfront_charges,term,Neg_ammortization,interest_only,lump_sum_payment,property_value,construction_type,occupancy_type,Secured_by,total_units,income,credit_type,Credit_Score,co-applicant_credit_type,age,submission_of_application,LTV,Region,Security_Type,Status,dtir1
+113159,2019,cf,Female,nopre,type1,p3,l1,nopc,nob/c,516500,5.375,1.4606,13877.0,360.0,neg_amm,not_int,not_lpsm,698000.0,sb,pr,home,1U,6960.0,CIB,835,EXP,55-64,to_inst,73.99713467,North,direct,0,44.0
+165084,2019,cf,Joint,nopre,type1,p4,l1,nopc,nob/c,426500,3.625,-0.1806,,360.0,not_neg,not_int,not_lpsm,848000.0,sb,pr,home,1U,18060.0,CRIF,658,EXP,55-64,not_inst,50.29481132,North,direct,0,7.0
+39160,2019,cf,Male,nopre,type2,p3,l1,nopc,b/c,166500,4.25,1.3808,3219.93,360.0,not_neg,not_int,not_lpsm,218000.0,sb,pr,home,1U,3420.0,EXP,602,CIB,35-44,to_inst,76.37614679,central,direct,0,49.0
+81500,2019,,Male,nopre,type1,p2,l1,nopc,nob/c,136500,5.125,1.4041,1250.0,360.0,not_neg,not_int,not_lpsm,228000.0,sb,pr,home,1U,7140.0,CIB,539,CIB,>74,to_inst,59.86842105,North,direct,0,5.0
+88336,2019,cf,Sex Not Available,pre,type1,p3,l1,nopc,nob/c,206500,4.375,0.0862,4840.0,360.0,neg_amm,not_int,not_lpsm,288000.0,sb,pr,home,1U,3180.0,CIB,541,EXP,<25,to_inst,71.70138889,south,direct,0,38.0
+31273,2019,cf,Joint,pre,type1,p4,l1,nopc,nob/c,396500,3.75,0.5273,0.0,180.0,not_neg,not_int,not_lpsm,1618000.0,sb,pr,home,1U,9000.0,CRIF,529,EXP,65-74,not_inst,24.50556242,North,direct,0,37.0
+111230,2019,cf,Joint,nopre,type3,p3,l1,nopc,nob/c,226500,4.99,0.5328,4548.37,360.0,not_neg,not_int,not_lpsm,228000.0,sb,pr,home,1U,6540.0,EXP,728,EXP,35-44,to_inst,99.34210526,central,direct,0,40.0
+106551,2019,cf,Joint,nopre,type1,p1,l1,nopc,nob/c,376500,3.375,-0.1701,1657.44,360.0,not_neg,not_int,not_lpsm,468000.0,sb,pr,home,1U,4200.0,CIB,525,EXP,35-44,not_inst,80.44871795,south,direct,0,42.0
+57212,2019,ncf,Female,pre,type1,p1,l1,nopc,nob/c,176500,4.375,0.4043,3157.4,360.0,not_neg,not_int,not_lpsm,288000.0,sb,pr,home,1U,4860.0,EXP,818,CIB,35-44,to_inst,61.28472222,North,direct,0,37.0
+91222,2019,cf,Joint,nopre,type1,p3,l1,nopc,nob/c,246500,3.99,0.1589,817.4,180.0,not_neg,not_int,not_lpsm,448000.0,sb,pr,home,1U,6000.0,CIB,635,EXP,45-54,not_inst,55.02232143,south,direct,0,43.0
+34226,2019,cf,Joint,nopre,type1,p1,l1,nopc,nob/c,546500,,,,360.0,not_neg,int_only,not_lpsm,,sb,pr,home,1U,9300.0,EQUI,565,EXP,35-44,not_inst,,North,direct,1,
+63603,2019,cf,Male,nopre,type1,p4,l1,nopc,nob/c,306500,,,,360.0,not_neg,not_int,not_lpsm,358000.0,sb,pr,home,1U,5580.0,CRIF,543,CIB,25-34,to_inst,85.61452514,North,direct,1,45.0
+87837,2019,cf,Female,nopre,type1,p1,l1,nopc,nob/c,206500,,,,300.0,neg_amm,not_int,not_lpsm,,sb,pr,home,1U,3840.0,EQUI,618,EXP,45-54,not_inst,,south,direct,1,
+74975,2019,ncf,Joint,pre,type2,p4,l1,nopc,b/c,326500,,,,360.0,not_neg,not_int,not_lpsm,,sb,pr,home,1U,4920.0,EQUI,619,EXP,35-44,to_inst,,central,direct,1,
+111257,2019,cf,Male,nopre,type2,p3,l1,nopc,b/c,196500,,,,360.0,neg_amm,not_int,not_lpsm,228000.0,sb,pr,home,1U,1860.0,CIB,880,CIB,65-74,to_inst,86.18421053,North,direct,1,51.0
+133829,2019,cf,Sex Not Available,nopre,type1,p3,l1,nopc,nob/c,116500,,,,360.0,neg_amm,not_int,not_lpsm,,sb,pr,home,1U,2340.0,EQUI,567,EXP,55-64,to_inst,,south,direct,1,
+93010,2019,cf,Male,nopre,type1,p4,l1,nopc,nob/c,426500,,,,360.0,not_neg,not_int,not_lpsm,468000.0,sb,pr,home,1U,5160.0,CIB,765,CIB,45-54,to_inst,91.13247863,North,direct,1,40.0
+148505,2019,cf,Sex Not Available,nopre,type1,p3,l1,nopc,nob/c,176500,,,,360.0,not_neg,not_int,not_lpsm,238000.0,sb,pr,home,1U,4140.0,CIB,611,CIB,45-54,to_inst,74.15966387,south,direct,1,47.0
+33355,2019,,Male,nopre,type1,p4,l1,nopc,nob/c,516500,,,,360.0,neg_amm,not_int,not_lpsm,688000.0,sb,pr,home,1U,7620.0,CRIF,629,CIB,45-54,to_inst,75.07267442,south,direct,1,30.0
+130994,2019,cf,Joint,nopre,type3,p4,l1,nopc,nob/c,546500,,,,360.0,not_neg,not_int,not_lpsm,538000.0,sb,pr,home,1U,,CIB,714,EXP,55-64,not_inst,101.5799257,North,direct,1,
